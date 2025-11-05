@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # react-vite2-template
 
 > react-vite2-template是@lego-cli/web端模版，使用antd作为组件库，lodash作为工具库
@@ -87,3 +88,7 @@ revert: 代码回退
 
 *目前只支持一种模板，后续迭代增加新的模板类型
 
+=======
+# planet-m-master
+同事吧
+>>>>>>> 56e44afc9201e4fdf07e20706dba2f252a7e24bb
