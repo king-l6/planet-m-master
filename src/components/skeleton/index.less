@@ -1,0 +1,167 @@
+.c-skeletonCom {
+  position: relative;
+  padding-bottom: 16px;
+  margin-top: 17px;
+
+  &-title {
+    display: flex;
+    align-items: center;
+  }
+
+  &-avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    background-image: linear-gradient(90deg, #ececf0 25%, #d3d3d9 37%, #ececf0 63%);
+    background-size: 400% 100%;
+    border: 1px solid #f1f2f3;
+    border-radius: 50%;
+    animation: skeleton-loading 1.4s ease infinite;
+  }
+
+  &-text {
+    width: 147px;
+    height: 34px;
+
+    &-name {
+      width: 147px;
+      height: 12px;
+      margin-bottom: 5px;
+      background-image: linear-gradient(90deg, #ececf0 25%, #d3d3d9 37%, #ececf0 63%);
+      background-size: 400% 100%;
+      animation: skeleton-loading 1.4s ease infinite;
+    }
+
+    &-info {
+      width: 147px;
+      height: 12px;
+      background-image: linear-gradient(90deg, #ececf0 25%, #d3d3d9 37%, #ececf0 63%);
+      background-size: 400% 100%;
+      animation: skeleton-loading 1.4s ease infinite;
+    }
+  }
+
+  &-content {
+    position: relative;
+    width: 267px;
+    height: 14px;
+    margin-bottom: 5px;
+    margin-left: 36px;
+    background-image: linear-gradient(90deg, #ececf0 25%, #d3d3d9 37%, #ececf0 63%);
+    background-size: 400% 100%;
+    animation: skeleton-loading 1.4s ease infinite;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    width: calc(100% - 36px);
+    height: 12px;
+    height: 1px;
+    content: "";
+    background: #f1f2f3;
+  }
+
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0 50%;
+    }
+  }
+}
+
+.c-skeletonArt {
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 16px auto 16px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 12px;
+
+  &-head {
+    width: 267px;
+    height: 12px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(90deg, #ececf0 25%, #d3d3d9 37%, #ececf0 63%);
+    background-size: 400% 100%;
+    animation: skeleton-loading 1.4s ease infinite;
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+  }
+
+  &-avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    background-image: linear-gradient(90deg, #ececf0 25%, #d3d3d9 37%, #ececf0 63%);
+    background-size: 400% 100%;
+    border: 1px solid #f1f2f3;
+    border-radius: 50%;
+    animation: skeleton-loading 1.4s ease infinite;
+  }
+
+  &-text {
+    width: 147px;
+    height: 34px;
+
+    &-name {
+      width: 147px;
+      height: 12px;
+      margin-bottom: 5px;
+      background-image: linear-gradient(90deg, #ececf0 25%, #d3d3d9 37%, #ececf0 63%);
+      background-size: 400% 100%;
+      animation: skeleton-loading 1.4s ease infinite;
+    }
+
+    &-info {
+      width: 147px;
+      height: 12px;
+      background-image: linear-gradient(90deg, #ececf0 25%, #d3d3d9 37%, #ececf0 63%);
+      background-size: 400% 100%;
+      animation: skeleton-loading 1.4s ease infinite;
+    }
+  }
+
+  &-content {
+    position: relative;
+    width: calc(100vw - 72px);
+    height: 14px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(90deg, #ececf0 25%, #d3d3d9 37%, #ececf0 63%);
+    background-size: 400% 100%;
+    animation: skeleton-loading 1.4s ease infinite;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    width: calc(100% - 36px);
+    height: 12px;
+    height: 1px;
+    content: "";
+    background: #f1f2f3;
+  }
+
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0 50%;
+    }
+  }
+}

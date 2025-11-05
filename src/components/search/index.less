@@ -1,0 +1,85 @@
+.c-search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  width: 299px;
+  height: 32px;
+  background: #f6f7f8;
+  border-radius: 25px;
+
+  .search-input-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 6px 9px 6px 14px;
+    border: 1px solid transparent;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-flex: 1;
+
+    &-icon {
+      flex: none;
+      height: 100%;
+      font-size: 16px;
+      color: #61666d;
+    }
+
+    .search-input {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 6px;
+      font-size: 14px;
+      color: #18191c;
+      caret-color: #00aeec;
+
+      ::-webkit-input-placeholder {
+        font-family: PingFang SC, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+        color: #c9ccd0;
+      }
+
+      input::-ms-clear {
+        // 去除IE 搜索的叉号
+        display: none;
+      }
+
+      input::-webkit-search-cancel-button {
+        //去除apple 搜索叉号
+        display: none;
+        -webkit-appearance: none;
+      }
+
+      input[type="search"] {
+        -webkit-appearance: none;
+      }
+
+      form {
+        width: 100%;
+        padding: 0;
+        margin: 0 10px 0 0;
+
+        input {
+          width: 100%;
+          padding: 0;
+          font-family: PingFang SC, sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 20px;
+          background: transparent;
+          border: none;
+          outline: none;
+        }
+      }
+
+      &-clear {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,244 @@
+.c-comment {
+  position: relative;
+  padding-bottom: 16px;
+  margin-top: 17px;
+
+  &-avatar {
+    position: relative;
+    width: 8vw;
+    height: 8vw;
+    margin-right: 6px;
+
+    img {
+      width: 8vw;
+      height: 8vw;
+      border: 1px solid #f1f2f3;
+      border-radius: 50%;
+    }
+
+    .vicon {
+      position: absolute;
+      right: -2px;
+      bottom: -2px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .avar {
+    width: 8vw;
+    height: 8vw;
+    margin-right: 6px;
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+
+    >:nth-child(2) {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-between;
+
+      >:first-child {
+        flex: 1;
+      }
+    }
+  }
+
+  &-name {
+    display: flex;
+    align-items: center;
+    max-width: 54vw;
+    padding-bottom: 1px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #61666d;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &-author {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      height: 14px;
+      padding: 0 0.5vw;
+      margin-left: 1vw;
+      font-size: 10px;
+      font-weight: normal;
+      line-height: normal;
+      color: #c9ccd0;
+      border: 1px solid #c9ccd0;
+      border-radius: 2px;
+    }
+
+    &-reply {
+      margin: 0 1vw;
+      font-size: 12px;
+      color: #c9ccd0;
+    }
+
+    &-publish {
+      display: inline-block;
+      max-width: 31.7vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &-publisher {
+      display: inline-block;
+      max-width: 19vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &-raply {
+      display: inline-block;
+      max-width: 9vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &-raplyer {
+      display: inline-block;
+      max-width: 13vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &-info {
+    height: 14px;
+    font-size: 10px;
+    color: #c9ccd0;
+  }
+
+  &-method {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    >div {
+      display: inline-block;
+
+      &:first-of-type {
+        margin-right: 5vw;
+      }
+
+      svg {
+        font-size: 18px;
+        color: #c9ccd0;
+      }
+    }
+
+    &-likecount {
+      margin-left: 0.5vw;
+      font-size: 12px;
+      color: #c9ccd0;
+    }
+
+    &-menu {
+      margin-left: 5vw;
+    }
+  }
+
+  &-content {
+    position: relative;
+    display: -webkit-box;
+    margin-top: 12px;
+    margin-left: 9.6vw;
+    font-size: 14px;
+    line-height: normal;
+    color: #18191c;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+
+    >span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px 4px;
+      margin-right: 6px;
+      font-size: 10px;
+      line-height: normal;
+      color: #00aeec;
+      background: #dff6fd;
+      border: 0.5px solid #bfedfa;
+      border-radius: 4px;
+    }
+
+    >div {
+      position: relative;
+      top: 1px;
+      display: inline;
+      width: 100%;
+      word-break: break-word;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    display: block;
+    width: calc(100% - 36px);
+    height: 12px;
+    height: 1px;
+    content: "";
+    background: #f1f2f3;
+  }
+
+  .active-btn {
+    svg {
+      color: #00aeec;
+    }
+  }
+
+  .c-comment-name-target {
+    display: flex;
+    align-items: center;
+
+    >span {
+      display: inline-block;
+      margin-right: 0.8vw;
+      margin-left: 0.8vw;
+      line-height: 17px;
+      color: #c9ccd0;
+    }
+
+    &-actor {
+      display: inline-block;
+      height: 14px;
+      padding: 0 0.5vw;
+      margin-left: 0.8vw;
+      font-size: 10px;
+      line-height: 14px;
+      color: #c9ccd0;
+      text-align: center;
+      vertical-align: top;
+      border: 1px solid #c9ccd0;
+      border-radius: 2px;
+    }
+  }
+
+  a {
+    color: #008ac5;
+    text-decoration: none;
+  }
+
+  .icon-link {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    color: #008ac5;
+    vertical-align: -0.15em;
+    fill: currentColor;
+  }
+}

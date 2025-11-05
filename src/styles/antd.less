@@ -1,0 +1,170 @@
+:root {
+  --adm-font-size-main: 16px;
+}
+
+.adm-toast-wrap {
+  width: 166px !important;
+  padding: 12px !important;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  background-color: black !important;
+  opacity: 0.7;
+}
+
+.adm-infinite-scroll {
+  padding-top: 12px;
+  padding-bottom: 30px;
+  font-size: 12px;
+  color: #c9ccd0;
+  background-color: #f1f2f3;
+}
+
+.adm-popup-body {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  .adm-action-sheet-button-list {
+    padding-bottom: 24px !important;
+  }
+}
+
+.adm-space-horizontal.adm-space-wrap > .adm-space-item {
+  padding-bottom: 5px;
+  margin-right: 5px;
+}
+
+.adm-switch-checkbox {
+  width: 48px;
+  min-width: 48px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.adm-switch-handle {
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transform: translateY(-50%);
+}
+
+.adm-switch-checkbox::before {
+  width: auto;
+  height: auto;
+  background: rgba(153, 153, 153, 0.3);
+}
+
+.adm-tag {
+  max-width: 98px;
+  height: 30px;
+  padding: 6.5px 12px;
+  overflow: hidden;
+  font-family: PingFang SC, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  color: #61666d;
+  text-align: center;
+  text-overflow: ellipsis;
+  background-color: #f6f7f8;
+  border: none;
+}
+
+.adm-action-sheet {
+  .adm-action-sheet-button-list {
+    padding-top: 16px;
+    padding-bottom: 42px;
+
+    .adm-action-sheet-button-item-wrapper {
+      button {
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+        border: none;
+
+        >div {
+          font-size: 15px;
+          color: #18191c;
+        }
+      }
+    }
+  }
+}
+
+.adm-dialog-wrap {
+  .adm-dialog-body {
+    padding: 24px 20px;
+  }
+
+  .adm-dialog-footer {
+    height: 44px;
+  }
+
+  .adm-dialog-footer-delete {
+    font-weight: normal;
+    color: #f85a54;
+  }
+
+  .adm-dialog-action-row {
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    margin: 0;
+    background: white;
+
+    button {
+      width: calc((100% - 32px) / 2);
+      // font-size: 16px !important;
+      color: #18191c;
+      border: none !important;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.adm-popover-inner {
+  width: 77px;
+
+  .adm-popover-inner-menu {
+    position: relative;
+    width: 77px;
+    min-width: 77px;
+    border-bottom: none;
+
+    &:last-of-type {
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 12px;
+      z-index: 1;
+      display: block;
+      width: calc(100% - 24px);
+      height: 1px;
+      content: "";
+      background: #f1f2f3;
+    }
+
+    >button {
+      display: inline-block;
+      width: 77px;
+      height: 32.5px;
+      padding: 8px 12px;
+      font-size: 12px;
+      line-height: 17px;
+      color: #61666d;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

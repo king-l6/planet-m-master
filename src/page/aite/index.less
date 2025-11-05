@@ -1,0 +1,107 @@
+.page-searchAitetags {
+  position: relative;
+  z-index: 1100;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #fff;
+
+  &-search {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    width: 100%;
+    height: 48px;
+    padding: 8px 16px 8px 16px;
+
+    span {
+      margin-left: 16px;
+      font-family: PingFang SC, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+      color: #61666d;
+    }
+  }
+
+  &-result {
+    position: relative;
+    z-index: 1001;
+    width: 100%;
+    height: calc(100vh - 48px);
+    // padding-bottom: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    .result-list {
+      >div {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        margin-left: 14px;
+        font-size: 16px;
+        line-height: 60px;
+        color: #18191c;
+        border-bottom: 1px solid #eee;
+
+        >div {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          margin-right: 15px;
+
+          .vicon {
+            position: absolute;
+            right: -2px;
+            bottom: -2px;
+          }
+        }
+
+        .img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+
+        .avar {
+          width: 40px;
+          height: 40px;
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .result-no {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      display: none;
+      width: 280px;
+      text-align: center;
+      transform: translateX(-50%);
+
+      img {
+        display: block;
+        width: 97px;
+        height: 158px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+      }
+
+      span {
+        font-family: PingFang SC, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        color: #9499a0;
+      }
+    }
+
+    .result-show {
+      display: block;
+    }
+  }
+}

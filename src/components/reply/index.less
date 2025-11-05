@@ -1,0 +1,34 @@
+.c-reply {
+  padding: 12px;
+  margin-top: 16px;
+  margin-left: 36px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #9499a0;
+  background: #f6f7f8;
+  border-radius: 8px;
+
+  &-item {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    &-name {
+      color: #61666d;
+    }
+
+    &-text {
+      margin: 0 4px;
+    }
+  }
+
+  &-item + &-item {
+    margin-top: 8px;
+  }
+
+  >span {
+    display: inline-block;
+    margin-top: 8px;
+  }
+}

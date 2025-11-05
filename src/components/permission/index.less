@@ -1,0 +1,73 @@
+.page-permission {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: linear-gradient(0deg, #020307 20%, #0a121f 50%, #02050a 80%);
+
+  &-permup {
+    width: 100%;
+    height: 100vh;
+    background: url("https://s1.hdslb.com/bfs/static/ehr/afu-sdk/planet/bg_perm.png");
+    background-position-x: center;
+    background-size: contain;
+
+    &-child {
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      overflow: hidden;
+      color: #fff;
+      background: url('https://s1.hdslb.com/bfs/static/ehr/afu-sdk/planet/bg_permup.png') no-repeat top;
+      background-size: contain;
+
+      >:first-child {
+        margin-top: 53vh;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: center;
+      }
+
+      >:nth-child(2) {
+        margin-top: 8px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+
+        /* or 143% */
+        text-align: center;
+        opacity: 0.8;
+      }
+
+      >:nth-child(3) {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+
+        /* or 143% */
+        text-align: center;
+        opacity: 0.8;
+      }
+
+      >a {
+        display: block;
+        width: 120px;
+        height: 36px;
+        margin: 32px auto 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 36px;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        background: #00aeec;
+        border-radius: 100px;
+      }
+    }
+  }
+}

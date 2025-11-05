@@ -1,0 +1,75 @@
+.configmessage-page {
+  width: 100vw;
+  height: 100vh;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  &-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f2f3;
+
+    >:first-child {
+      display: flex;
+      flex-direction: column;
+      font-family: PingFang SC, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+
+      >:first-child {
+        font-size: 16px;
+        line-height: 22px;
+        color: #18191c;
+      }
+
+      >:last-child {
+        font-size: 12px;
+        line-height: 17px;
+        color: #9499a0;
+      }
+    }
+
+    &-switch {
+      width: 48px;
+      height: 30px;
+    }
+
+    &-confignum {
+      font-size: 14px;
+      color: #9499a0;
+
+      .iconService {
+        margin-left: 9px;
+      }
+    }
+  }
+}
+
+.popupwrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+  touch-action: pan-y;
+
+  >div {
+    width: 335px;
+    height: 48px;
+    line-height: 48px;
+    color: #18191c;
+    text-align: center;
+    border-bottom: 1px solid #f1f2f3;
+  }
+
+  :last-child {
+    border: none;
+  }
+
+  .select {
+    color: #00aeec;
+  }
+}

@@ -1,0 +1,80 @@
+.c-footer {
+  display: flex;
+  align-items: center;
+  height: 48px;
+
+  &-server {
+    position: absolute;
+    right: 80px;
+
+    &-wrap {
+      position: relative;
+      width: 26px;
+      height: 26px;
+
+      .identitycard {
+        position: absolute;
+        top: -52px;
+        left: -34px;
+        z-index: 1;
+        width: 70px !important;
+        height: 34px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #fff;
+      }
+
+      .tips {
+        position: absolute;
+        top: -76px;
+        left: -45px;
+        width: 154px;
+      }
+
+      .iconService {
+        width: 26px;
+        height: 26px;
+        border: 1px solid #f1f2f3;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  div:not(.adm-button-loading-wrapper,.expect) {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #61666d;
+    text-align: center;
+  }
+
+  div.foot-disabled {
+    color: #c9ccd0;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    min-width: 60px;
+    min-height: 28px;
+    padding: 0;
+    margin-right: 16px;
+    font-family: PingFang SC, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    color: #c9ccd0;
+    text-align: center;
+    background-color: #f6f7f8;
+    border: none;
+    border-radius: 100px;
+  }
+
+  .publish-button {
+    color: #fff;
+    background-color: #00aeec;
+  }
+}

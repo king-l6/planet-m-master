@@ -1,0 +1,106 @@
+.personal-page {
+  height: calc(100vh - 48px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-container {
+    min-height: calc(100vh - 80px);
+    background-color: #f1f2f3;
+
+    &-topdiv {
+      position: absolute;
+      top: 43px;
+      width: 100vw;
+      height: 12px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    &-tips {
+      width: 100%;
+      height: 12px;
+      background-color: white;
+    }
+
+    &-search {
+      position: absolute;
+      top: 8px;
+      right: 16px;
+      display: flex;
+      align-items: center;
+      padding-top: 6px;
+      padding-right: 20px;
+      padding-bottom: 6px;
+      padding-left: 13.67px;
+      color: #c9ccd0;
+      background: #f6f7f8;
+      border-radius: 100px;
+
+      svg {
+        font-size: 14px;
+      }
+
+      span {
+        margin-left: 8px;
+        font-size: 14px;
+      }
+    }
+
+    &-box {
+      box-sizing: content-box;
+      overflow-x: hidden;
+    }
+
+    &-tab {
+      width: 300vw;
+      touch-action: pan-x pan-y;
+
+      &-tabpane {
+        display: inline-block;
+        width: 100vw;
+        //height: calc(100vh - 130px);
+        overflow: hidden;
+        vertical-align: top;
+        transition: all 300ms;
+        -webkit-overflow-scrolling: touch;
+
+        .c-card {
+          &:first-child {
+            margin-top: 17px;
+          }
+        }
+
+        .no-result {
+          margin: 0 auto;
+          margin-top: 80px;
+          text-align: center;
+
+          img {
+            display: block;
+            width: 97px;
+            height: 158px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+          }
+
+          span {
+            font-family: PingFang SC, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: normal;
+            color: #9499a0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.personalPage {
+  height: calc(100vh - 48px);
+}

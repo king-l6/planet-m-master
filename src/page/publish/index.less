@@ -1,0 +1,349 @@
+.publish-post-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .publish-post-text {
+    position: relative;
+    flex: 1;
+    width: 100vw;
+    padding: 20px 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      span {
+        font-family: PingFang SC, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        color: #c9ccd0;
+      }
+
+      .title-toast {
+        color: #e58900;
+      }
+
+      textarea {
+        width: 90%;
+        font-family: PingFang SC, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 29px;
+        color: #18191c;
+        border: none;
+        outline: none;
+        caret-color: #00aeec;
+      }
+
+      textarea::-webkit-input-placeholder {
+        color: #c9ccd0;
+      }
+
+      textarea::-moz-placeholder {   /* Mozilla Firefox 19+ */
+        color: #c9ccd0;
+      }
+
+      textarea:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
+        color: #c9ccd0;
+      }
+
+      textarea:-ms-input-placeholder {  /* Internet Explorer 10-11 */
+        color: #c9ccd0;
+      }
+    }
+
+    &-line {
+      height: 1px;
+      margin-top: 12px;
+      margin-bottom: 9px;
+      background-color: #f1f2f3;
+    }
+
+    &-content {
+      padding-right: 11px;
+      // padding-bottom: 100px;
+      padding-left: 16px;
+      overflow: hidden;
+      -webkit-overflow-scrolling: touch;
+
+      textarea {
+        width: 100%;
+        padding-right: 5px;
+        overflow: hidden;
+        font-family: PingFang SC, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 24px;
+        color: #18191c;
+        border: none;
+        outline: none;
+        caret-color: #00aeec;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      textarea::-webkit-input-placeholder {
+        font-size: 16px;
+        color: #c9ccd0;
+      }
+
+      textarea::-moz-placeholder {
+        font-size: 16px;
+        color: #c9ccd0;
+      }
+
+      textarea:-moz-placeholder {
+        font-size: 16px;
+        color: #c9ccd0;
+      }
+
+      textarea:-ms-input-placeholder {
+        font-size: 16px;
+        color: #c9ccd0;
+      }
+
+      .c-wxupload {
+        margin-top: 60px;
+
+        .adm-image-uploader-cell {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .publish-post-footer {
+    bottom: 0;
+    width: 100vw;
+    padding: 0 16px;
+    padding-bottom: 34px;
+    margin-top: 4px;
+    background-color: white;
+
+    .publish-post-convention {
+      font-family: PingFang SC, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: normal;
+      color: #9499a0;
+
+      .publish-convention {
+        .adm-mask-content {
+          .adm-dialog-wrap {
+            top: 103px;
+            left: 50%;
+            width: 280px;
+            max-height: 410px;
+            background-image: url('https://s1.hdslb.com/bfs/static/ehr/afu-sdk/planet/convention.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 12px;
+            transform: translateX(-50%);
+
+            ::-webkit-scrollbar {
+              display: none;
+            }
+
+            .planet-convention {
+              width: 280px;
+              height: 360px;
+              padding: 24px 20px 14px;
+              background: transparent;
+
+              .adm-space {
+                >:first-child {
+                  width: 240px;
+                  height: 22px;
+                  margin-bottom: 16px;
+
+                  .adm-dialog-body-title {
+                    font-family: PingFang SC, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+                    color: #18191c;
+                    text-align: center;
+                  }
+                }
+
+                >:last-child {
+                  ::-webkit-scrollbar {
+                    width: 5px;
+                  }
+
+                  ::-webkit-scrollbar-thumb {
+                    width: 5px;
+                    background: #e3e5e7;
+                    border-radius: 100px;
+                  }
+                }
+
+                .adm-dialog-body-message {
+                  width: 240px;
+                  max-height: 283px;
+                  overflow-x: hidden;
+                  overflow-y: scroll;
+                  font-family: PingFang SC, sans-serif;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 21px;
+                  color: #18191c;
+
+                  span {
+                    color: #00aeec;
+                  }
+
+                  >:first-child {
+                    margin-bottom: 30px;
+                  }
+
+                  >:nth-last-child(2) {
+                    padding-bottom: 8px;
+                    margin-bottom: 0;
+                  }
+
+                  >:last-child {
+                    position: absolute;
+                    bottom: 64px;
+                    left: 0;
+                    width: 280px;
+                    height: 20px;
+                    margin-bottom: 0;
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, #fff 100%);
+                  }
+                }
+              }
+            }
+
+            .adm-dialog-footer {
+              width: 280px;
+              height: 50px;
+
+              .adm-dialog-action-row {
+                width: 248px;
+                height: 34px;
+                margin: 0 auto;
+                background: #00aeec;
+                border-top: none;
+                border-radius: 100px;
+
+                .adm-button {
+                  padding: 0;
+                  font-family: PingFang SC, sans-serif;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: normal;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .convention {
+        display: flex;
+        justify-content: space-between;
+
+        .terms {
+          color: #00aeec;
+        }
+
+        .text-limit {
+          color: #e58900;
+        }
+      }
+    }
+  }
+
+  .publish-post-footerandroid {
+    padding-bottom: 0;
+  }
+
+  .bottom {
+    display: flex;
+
+    &__left {
+      display: flex;
+      align-items: center;
+
+      .icon-image {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+        color: #61666d;
+        text-align: center;
+      }
+    }
+  }
+
+  .publish-post-footer-active {
+    position: relative;
+  }
+}
+
+.back-dialog {
+  padding: 24px 20px !important;
+
+  .adm-space {
+    >:first-child {
+      margin-bottom: 6px;
+    }
+
+    .adm-dialog-body-title {
+      font-family: PingFang SC, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .adm-dialog-body-message {
+      color: #61666d;
+      text-align: center;
+    }
+  }
+}
+
+.back-dialog + div {
+  height: 44px !important;
+  border-top: solid 0.5px var(--adm-border-color);
+
+  .adm-dialog-action-row {
+    background: #fff !important;
+
+    button {
+      font-family: PingFang SC, sans-serif;
+      font-size: 16px !important;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    :first-child {
+      color: #18191c;
+      border-right: none !important;
+    }
+
+    :last-child {
+      color: #00aeec;
+    }
+  }
+}

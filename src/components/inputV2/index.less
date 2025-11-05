@@ -1,0 +1,225 @@
+.c-input-v2 {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100vw;
+  // padding-bottom: 14px;
+  background-color: white;
+  border-top: 1px solid #f1f2f3;
+
+  &-customerService {
+    position: relative;
+    margin-right: 4px;
+
+    .identitycard {
+      position: absolute;
+      top: -52px;
+      left: 5px;
+      z-index: 1;
+      width: 70px !important;
+      height: 34px;
+      font-size: 12px;
+      line-height: 16px;
+      color: #fff;
+    }
+
+    .tips {
+      position: absolute;
+      top: -76px;
+      left: -4px;
+      width: 154px;
+    }
+
+    .iconService {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #f1f2f3;
+      border-radius: 50%;
+    }
+  }
+
+  >div:not(.tool) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+
+    .edit-wrapper {
+      position: fixed;
+      display: flex;
+      flex: 1;
+      align-items: flex-end;
+      width: calc(100vw);
+      min-height: 60px;
+      max-height: 124px;
+      padding: 12px 16px;
+      background-color: #fff;
+      border: none;
+      scrollbar-width: none; /* firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+
+      &::-webkit-scrollbar {
+        // width: 0 !important;
+        // height: 0 !important;
+        display: none;
+      }
+
+      .comment-input {
+        flex: 1;
+        min-width: 201px;
+        // max-width: 275px;
+        max-height: 100px;
+        padding: 6px 12px;
+        overflow-y: auto;
+        font-family: PingFang SC, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+        color: #18191c;
+        background: #f6f7f8;
+        border-radius: 16px;
+        transition: width 200ms;
+        scrollbar-width: none; /* firefox */
+        -ms-overflow-style: none; /* IE 10+ */
+
+        &::-webkit-scrollbar {
+          width: 0 !important;
+          height: 0 !important;
+        }
+
+        &:empty::before {
+          color: #c9ccd0;
+          content: attr(placeholder);
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &::-webkit-scrollbar {
+          display: none;/* 隐藏滚动条 */
+        }
+
+        &[contenteditable] {
+          -webkit-user-select: text;
+          user-select: text;
+        }
+
+        & * {
+          -webkit-user-select: text;
+          user-select: text;
+          -webkit-user-modify: read-write-plaintext-only;
+          -moz-user-modify: read-write-plaintext-only;
+        }
+
+        div {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 20px;
+          color: #18191c;
+        }
+
+        >div {
+          height: auto;
+        }
+      }
+
+      .c-input-v2-btn-publish {
+        display: flex !important;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 32px;
+        padding: 6px 12px;
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        background: #00aeec;
+        border-radius: 16px;
+      }
+    }
+
+    .c-input-v2-operate {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      height: 60px;
+
+      >div {
+        display: flex;
+        justify-content: center;
+        width: calc((100vw) / 3);
+        text-align: center;
+
+        >svg {
+          font-size: 20px;
+          color: #61666d;
+        }
+
+        >span {
+          margin-left: 7px;
+          font-family: 'PingFang SC', sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          color: #61666d;
+        }
+      }
+    }
+
+    .overall {
+      width: 100%;
+    }
+
+
+    // >div {
+    //   position: relative;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: inherit;
+
+    //   >div + div {
+    //     margin-left: 10px;
+    //     text-align: center;
+    //   }
+
+    //   >div {
+    //     display: inline-block;
+    //     width: 34px;
+    //     // height: 34px;
+    //     >svg {
+    //       font-size: 20px;
+    //     }
+
+    //     >div {
+    //       // height: 14px;
+    //       font-size: 10px;
+    //       line-height: 14px;
+    //       color: #61666d;
+    //     }
+    //   }
+    // }
+
+    // >:last-child {
+    //   height: 32px;
+    // }
+  }
+
+  .active-btn {
+    span {
+      color: #00aeec !important;
+    }
+
+    svg {
+      color: #00aeec !important;
+    }
+  }
+}

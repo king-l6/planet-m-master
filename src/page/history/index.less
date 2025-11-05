@@ -1,0 +1,54 @@
+.search-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+  &-history {
+    width: 100vw;
+
+    &-head {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-between;
+      height: 44px;
+
+      >:first-child {
+        margin-left: 16px;
+        font-family: PingFang SC, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        color: #18191c;
+      }
+
+      >:last-child {
+        margin-right: 13.5px;
+        font-family: PingFang SC, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        color: #9499a0;
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &-content {
+      div {
+        display: inline-block;
+        min-width: 48px;
+        height: 30px;
+        margin: 0 8px 8px;
+        text-align: center;
+      }
+
+      .search-history-content-hidden {
+        display: none;
+      }
+    }
+  }
+}

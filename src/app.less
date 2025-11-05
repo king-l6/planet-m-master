@@ -1,0 +1,114 @@
+@import "./styles/animate.less";
+@import "./styles/antd.less";
+@import './app-pc.less';
+
+body,
+html {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: PingFang SC, Hiragino Sans GB, 'Segoe UI', SegoeUI, 'Microsoft YaHei', '微软雅黑', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  overflow: hidden;
+}
+
+.lego {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  >div {
+    &:first-of-type {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+
+  .convention-bkg {
+    width: 100vw;
+    height: 100vh;
+
+    img {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  .PC-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+
+    >div {
+      text-align: center;
+
+      img {
+        display: block;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+      }
+
+      span {
+        font-family: PingFang SC, sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 25px;
+        color: #9499a0;
+      }
+    }
+  }
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  vertical-align: -0.15em;
+  fill: currentColor;
+}
+
+:not(input, textarea) {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+at {
+  height: 26px;
+  margin: 0 2px;
+  line-height: 26px;
+  color: #008ac5;
+  background-color: transparent;
+  border-radius: 13px;
+  outline: none;
+  appearance: none;
+  // -webkit-user-modify: read-only !important;
+  // -moz-user-modify: read-only !important ;
+}
+
+a {
+  color: #008ac5;
+  text-decoration: none;
+}
+
+.icon-link {
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  color: #008ac5;
+  vertical-align: -0.15em;
+  fill: currentColor;
+}

@@ -1,0 +1,44 @@
+.editor {
+  width: 100%;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  line-height: 30px;
+  text-align: left;
+  background: #fff;
+  border-radius: 5px;
+  caret-color: #00aeec;
+
+  &:empty::before {
+    font-size: 16px;
+    color: #c9ccd0;
+    content: attr(placeholder);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &[contenteditable] {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+
+  & * {
+    -webkit-user-select: text;
+    user-select: text;
+    -webkit-user-modify: read-write-plaintext-only;
+    -moz-user-modify: read-write-plaintext-only;
+  }
+}
+
+.at-button {
+  height: 26px;
+  margin: 0 2px;
+  line-height: 26px;
+  color: #008ac5;
+  background-color: transparent;
+  border-radius: 13px;
+  outline: none;
+  appearance: none;
+}

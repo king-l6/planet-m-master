@@ -1,0 +1,155 @@
+.c-convention {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  // .adm-mask {
+  //   background: rgba(0, 0, 0, 0) !important;
+  // }
+
+  .hdVideo {
+    text-align: center;
+    background: #100e2a;
+  }
+
+  .hdVideo-image {
+    width: 46.1vh;
+  }
+
+  &-content {
+    position: absolute;
+    top: 0;
+    width: calc(100vw - 64px);
+    height: calc(1.34 * (100vw - 64px));
+    padding: 0 32px;
+    margin: 0 26px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #fff;
+    background-image: url('https://s1.hdslb.com/bfs/static/ehr/afu-sdk/planet/login_curtain.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    >div {
+      height: calc(1.34 * (100vw - 64px) - 100px - 32px - 50px);
+      margin-top: 100px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      >div {
+        &:first-of-type {
+          margin-bottom: 30px;
+        }
+
+        &:last-of-type {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    >p {
+      margin: 0;
+      text-align: center;
+
+      >img {
+        width: 167px;
+        margin-top: 12px;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 100px;
+      right: 8px;
+
+      >svg {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.component-convention-toast {
+  .adm-mask-content {
+    .adm-toast-wrap {
+      top: 35% !important;
+      color: #18191c !important;
+      background: rgba(255, 255, 255) !important;
+      opacity: 0.9;
+    }
+  }
+}
+
+.c-pc-convention {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  .hdVideo {
+    text-align: center;
+    background: #100e2a;
+  }
+
+  .hdVideo-image {
+    width: 100%;
+  }
+
+  &-content {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vw;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    background-image: url('https://s1.hdslb.com/bfs/static/ehr/afu-sdk/planet/login_curtain.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 60%;
+
+    >div {
+      width: 50%;
+      height: 250px;
+      margin-top: 100px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      >div {
+        &:first-of-type {
+          margin-bottom: 30px;
+        }
+
+        &:last-of-type {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    >p {
+      margin: 10px;
+      text-align: center;
+
+      >img {
+        width: 167px;
+        margin-top: 30px;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 100px;
+      right: 125px;
+
+      >svg {
+        font-size: 24px;
+      }
+    }
+  }
+}
